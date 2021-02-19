@@ -25,4 +25,14 @@ public class MainPage {
         driver.get(mainUrl);
         driver.quit();
     }
+    @Test
+    public void testMainPage3(){
+
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get(mainUrl);
+        driver.quit();
+    }
 }
